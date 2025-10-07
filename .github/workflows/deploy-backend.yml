@@ -18,3 +18,4 @@ jobs:
           service: <YOUR_RAILWAY_SERVICE_ID>
         env:
           RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
+          
