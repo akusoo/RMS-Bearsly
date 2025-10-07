@@ -1,0 +1,30 @@
+{
+  "name": "rms-bearsly",
+  "version": "1.0.0",
+  "description": "A RMS with a primary objective of easy to use while having a wide range of feature for your UMKM stall or cafe's",
+  "main": "index.js",
+  "scripts": {
+    "dev:client": "npm --prefix client run dev",
+    "dev:server": "npm --prefix server run dev",
+    "dev": "concurrently \"npm run dev:client\" \"npm run dev:server\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akusoo/RMS-Bearsly.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akusoo/RMS-Bearsly/issues"
+  },
+  "homepage": "https://github.com/akusoo/RMS-Bearsly#readme",
+  "dependencies": {
+    "express": "^5.1.0",
+    "mongodb": "^6.20.0",
+    "react": "^19.2.0"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
