@@ -21,5 +21,5 @@ process.on('SIGTERM', async () => { await client.close(); process.exit(0); });
 
 start().catch((err) => {
   console.error('Failed to start server', err);
-  process.exit(1);
+  process.exit(1);  
 });

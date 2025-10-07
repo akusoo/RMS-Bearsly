@@ -1,5 +1,6 @@
 import express from 'express';
 import cors from 'cors';
+import morgan from 'morgan';
 import routes from './routes/index.js';
 import { errorHandler } from './middleware/errorHandler.js';
 
@@ -7,6 +8,9 @@ const app = express();
 
 app.use(cors());
 app.use(express.json());
+
+// Morgan logging middleware
+app.use(morgan('combined'));
 
 // Root route
 app.get('/', (req, res) => {
